@@ -1,23 +1,39 @@
 {
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-      "ecmaVersion": 2018,
-      "sourceType": "module"
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:jest/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "plugins": ["@typescript-eslint", "react-hooks"],
-    "extends": [
-      "plugin:react/recommended",
-      "plugin:@typescript-eslint/recommended"
-    ],
-    "rules": {
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn",
-      "react/prop-types": "off"
-    },
-    "settings": {
-      "react": {
-        "pragma": "React",
-        "version": "detect"
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": ["error", {"allow": ["warn", "error"]}],
+    "jest/expect-expect": "off",
+    "jest/prefer-expect-assertions": "off"
+  },
+  "overrides": [
+    {
+      "files": ["src/**/*.ts*"],
+      "excludedFiles": "*.test.ts",
+      "rules": {
+        "quotes": ["error", "single"]
       }
     }
-  }
+  ]
+}
