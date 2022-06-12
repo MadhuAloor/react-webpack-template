@@ -60,6 +60,7 @@ This speeds up type checking by moving it to a separate process. To do this you 
 ##### ESLintPlugin():
 This plugin uses eslint to find and fix all the javascript, typescript related issues, one of the famous eslint configs which keep your repo consistent is eslint-airbnb-config.
 [![Screenshot-2022-06-12-at-12-29-49-PM.png](https://i.postimg.cc/L51Gb8y1/Screenshot-2022-06-12-at-12-29-49-PM.png)](https://postimg.cc/jnR8WtYx)
+
 ##### Few development configuration pointers come in handy.
 - Enabling inline-source map for better-debugging capability
 - HotModuleReplacementPlugin for instant change reflection and dev server configuration, another way to serve these files is by running an express server.
