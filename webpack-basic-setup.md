@@ -12,7 +12,9 @@ We have multiple open source bundler options available now, which would save us 
 
 ## Why do we need a bundler?
 
-Bundlers play a crucial role while building a modern web application. They take care of dependency management pain and provide optimization options like chunk/code-splitting, way to enable code sharing using federation, HMR (Hot module replacement) for better dev-ex, and great error logs etc.
+Bundlers play a crucial role while building a modern web application. It generates a single file (or a few files) that are required to run your application on the browser in an optimized way. 
+
+It takes care of dependency management pain and provides out-of-the-box optimization options like chunk/code-splitting, a way to enable code sharing using federation, HMR (Hot module replacement) for better dev-ex, great error logs, and many other tooling support.
 
 ![bundling](https://media.giphy.com/media/xUySTQ6Ed5CVlxNgQ0/giphy.gif "bundling")
 
